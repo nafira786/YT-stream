@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo */
+.logo img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+/* Input Field */
+input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Buttons */
+button {
+    background: #ff9800;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 45%;
+    max-width: 200px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e68900;
+}
+
+/* Select Dropdown */
+select {
+    width: calc(100% - 20px);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Video Preview */
+#preview-area {
+    margin-top: 20px;
+}
+
+#video-preview {
+    width: 25%;
+    height: 20px;
+    max-height: 300px;
+    border-radius: 8px;
+    display: none;
+}
+
+/* Hide Elements */
+.hidden {
+    display: none;
+}
+
+/* 🖥️ Large Screens (PC) */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+/* 📱 Small Screens (Phones) */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input, select {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #video-preview {
+        max-height: 200px;
+    }
+}
